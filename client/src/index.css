@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.notes__notelist{
+
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 800px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+}
+
+.notes__notelist_note{
+
+  max-width: 800px;
+  min-width: 800px;
+  background: red;
+  margin: 5px;
+  transform: translate(-15px);
+
+}
+
+.notes__notelist_note {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: auto;
+  max-height: 50%;
+  position: relative;
+}
+
+.notes__notelist_title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.notes__notelist_content {
+  font-size: 14px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.notes__notelist_author {
+  font-size: 12px;
+  color: #888888;
+}
+
+.notes__notelist_title_container{
+
+  position: relative;
+  top: 0;
+
+}
+
+.notes__notelist_author_container{
+
+  position: relative;
+  bottom: 0%;
+
+}
+
+.searchbar{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+
+}
+
+.searchbar__input {
+
+  height: 30px;
+  width: 250px;
+
+}
+
+.searchbar__button{
+
+  height: 30px;
+  width: 100px;
+  margin-left: 10px;
+
+}
+
+.notes__notelist_delete{
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
+
+.notes__notelist_delete:hover, 
+.searchbar__button:hover{
+  cursor: pointer;
+}
+
+.newNote__container{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  width: 800px;
+  margin: 0 auto;
+  height: 70px;
+  
+}
+
+.note_edit__container{
+
+  left: 0;
+  top: 0;
+
+}
+
+
+.notes__notelist_edit{
+
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+}
+
+.fundNote__note{
+
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+.notes__notelist_content{
+
+  line-break: auto;
+
+}
