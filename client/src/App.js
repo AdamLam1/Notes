@@ -118,10 +118,14 @@ const App = () => {
 
   return (
     <div>
+      <div className='Navbar'>
+        <div className='LoginButtons'>
+          {userName && <LogoutButton />}
+        </div>
+        {userName && <SearchBar onSearch={searchNote} />}
+        {userName && <NewNote onAddNote={addNote}/>}
+      </div>
       {!userName && <LoginButton />}
-      {userName && <LogoutButton />}
-      {userName && <SearchBar onSearch={searchNote} />}
-      {userName && <NewNote onAddNote={addNote}/>}
       {foundNote && <FoundNote note={foundNote} />}
       {editNote && <EditNote note={editNote} onSave={saveNote} />} {/* Dodaj komponent EditNote */}
       {userName && (

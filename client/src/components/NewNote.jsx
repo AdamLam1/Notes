@@ -48,14 +48,16 @@ const NewNote = ({ onAddNote }) => {
           value={title}
           onChange={handleTitleChange}
           placeholder="Tytuł"
+          className='newNote__container_title'
         />
         <input
           type="text"
           value={content}
           onChange={handleContentChange}
           placeholder="Treść"
+          className='newNote__container_content'
         />
-        <button onClick={handleAddNote}>Dodaj</button>
+        <button className='newNote__container_button' onClick={handleAddNote}>Dodaj</button>
       </div>
     </div>
   );
